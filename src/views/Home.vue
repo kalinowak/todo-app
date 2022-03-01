@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>ToDo App</h1>
+    <form @submit.prevent="addTodo()">
+      <label>New ToDo</label>
+      <input
+        v-model="newTodo"
+        type="text"
+        name="newTodo"
+        autocomplete="off" />
+
+      <button>Add ToDo</button>
+
+    </form>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
-}
+  },
+};
 </script>
