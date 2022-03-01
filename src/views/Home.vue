@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>ToDo App</h1>
-    <form @submit.prevent="addTodo()">
+    <form @submit.prevent="addTodo()" class="flex flex-column justify-center width-50 align-center">
       <label>New ToDo</label>
       <input v-model="newTodo" type="text" name="newTodo" autocomplete="off" />
 
